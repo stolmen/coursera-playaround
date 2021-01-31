@@ -1,0 +1,92 @@
+/*
+  You must implement the following breakpoints that will be considered
+  desktop, tablet, and mobile. The browser should display a desktop version
+  of the site when the width of the browser window is
+  992px and above. Tablet view should appear only if the
+  width of the browser window is between 768px and 991px,
+  inclusively. Mobile view should appear only if the
+  width of the browser is equal to or less than 767px.
+*/
+
+@media (min-width: 992px) {
+  .desktop-4 {
+    width: 33.33%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .tablet-6 {
+    width: 50%;
+  }
+  .tablet-12 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .mobile-12 {
+    width: 100%;
+  }
+}
+
+* {
+  /* box-sizing is here because it's not cascading */
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 1.75em;
+  text-align: center;
+  padding: 10px 0 15px 0;
+}
+
+body {
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 50px;
+}
+
+.row > div {
+  float: left;
+  padding: 10px;
+}
+
+.info {
+  border: black solid 1px;
+  background-color: grey;
+}
+
+.col-title {
+  float: right;
+  border-width: 0;
+  border-bottom-width: 1px;
+  border-color: black;
+  border-left-width: 1px;
+  border-style: solid;
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;  /* This sucks */
+  padding: 3px;
+
+  /* Can we somehow avoid hard coding this to an absolute value? hmm */
+  width: 130px;
+}
+
+.row > div:nth-child(1) .col-title {
+  background-color: pink;
+}
+
+.row > div:nth-child(2) .col-title {
+  background-color: red;
+  color: white;
+}
+
+.row > div:nth-child(3) .col-title {
+  background-color: orange;
+}
+
+.col-content {
+  clear: right;
+  padding: 0 15px 5px 15px;
+}
