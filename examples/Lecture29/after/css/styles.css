@@ -4,3 +4,34 @@ body {
   background-color: #61122f;
   font-family: 'Oxygen', sans-serif;
 }
+
+#navbar-lol {
+  background-color: #f6b319;
+  border-radius: 0;
+  border: 0
+}
+
+#logo-img {
+  background-color: grey;
+  width: 150px;
+  height: 150px;
+  background: url('https://image.freepik.com/free-vector/square-logo-vector_23987-194.jpg') no-repeat;
+  background-size: contain;
+  margin: 10px;
+}
+
+.navbar-brand {
+  padding-top:25px
+}
+
+.navbar-brand h1 {
+  font-family: 'Lora', serif;
+  color: #557c3e;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+  text-shadow: 1px 1px 1px #222;
+}
