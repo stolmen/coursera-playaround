@@ -1,0 +1,20 @@
+body {
+  background-color: #FFFFC2;
+}
+
+header .navbar-default {
+  background-color: #F5A9CB;
+  border-color: #977FD7;
+  border-width: 2px;
+  border-radius: 0;
+}
+
+#brand-heading {
+  font-size: 1.5em;
+  color: black;
+  font-weight: bold;
+}
+
+.container > div {
+  background-color: #9CCFE7;
+}
